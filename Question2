@@ -1,0 +1,25 @@
+public class PrimitiveDataTypesDemo {
+    public static void main(String[] args) {
+        // Declare and initialize variables of different primitive data types
+        int intVar = 42;
+        double doubleVar = 3.14;
+        char charVar = 'A';
+        boolean boolVar = true;
+
+        // Print the values before conversions
+        System.out.println("Values before conversions:");
+        System.out.println("Integer value: " + intVar);
+        System.out.println("Double value: " + doubleVar);
+        System.out.println("Character value: " + charVar);
+        System.out.println("Boolean value: " + boolVar);
+
+        // Perform type conversion
+        double convertedDouble = intVar; // Implicit conversion from int to double
+        int convertedInt = charVar;     // Implicit conversion from char to int
+
+        // Print the values after conversions
+        System.out.println("\nValues after conversions:");
+        System.out.println("Converted double value (from int): " + convertedDouble);
+        System.out.println("Converted int value (from char): " + convertedInt);
+    }
+}
